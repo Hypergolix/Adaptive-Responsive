@@ -1,0 +1,38 @@
+body {
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  flex-flow: column;
+  width: 80vw;
+  /*Or justify center*/
+  margin: auto;
+}
+
+header {
+  width: 100%;
+}
+
+.navBar__top {
+  margin-top: 62px;
+  max-height: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+}
+
+.navLinks__top {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 50%;
+  margin-left: 20px;
+}
+
+.navLinks__top li {
+  margin-left: 10px;
+}
+
+main {
+  width: 100%;
+}
