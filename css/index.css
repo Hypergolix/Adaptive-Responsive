@@ -35,4 +35,22 @@ header {
 
 main {
   width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.mainContent__left {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  margin-top: 185px;
+  width: 416px;
+  height: 244px;
+}
+
+main img {
+  margin-top: auto;
+  max-width: 100%;
+  height: auto;
 }
