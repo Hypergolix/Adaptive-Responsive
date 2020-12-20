@@ -1,0 +1,42 @@
+@media only screen and (max-width: 1024px) {
+  .imgContainer__right {
+    display: none;
+  }
+  main {
+    flex-flow: column;
+    justify-items: center;
+  }
+  .mainContent__left {
+    text-align: center;
+  }
+  /* */
+  .navBar__top {
+    min-width: 100%;
+  }
+  .navLinks__top {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .imgContainer__right {
+    display: block;
+    /*switch image*/
+    /*center*/
+  }
+  .navBar__top {
+    min-width: 100%;
+  }
+  .navLinks__top {
+    width: 40%;
+  }
+  .navLinks__top li {
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .navLinks__top a {
+    display: none;
+  }
+}

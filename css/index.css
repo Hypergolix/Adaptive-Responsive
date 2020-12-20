@@ -18,7 +18,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 40%;
+  min-width: fit-content;
+  max-width: 40%;
 }
 
 .navLinks__top {
@@ -26,6 +27,7 @@ header {
   flex-flow: row nowrap;
   justify-content: space-between;
   width: 50%;
+  min-width: fit-content; /**/
   margin-left: 20px;
 }
 
@@ -45,12 +47,25 @@ main {
   flex-flow: column;
   justify-content: space-between;
   margin-top: 185px;
-  width: 416px;
-  height: 244px;
+  /*width: 416px;
+    parent div does not respect width
+  */
+  flex: 0 0 416px;
+  max-height: 244px; /* min-height to respect vertical*/
+}
+
+.imgContainer__right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* 
+  flex-flow: column;
+  text-align: center;
+  */
 }
 
 main img {
-  margin-top: auto;
-  max-width: 100%;
+  /*remove srcset to fix*/
+  max-width: 90%;
   height: auto;
 }
